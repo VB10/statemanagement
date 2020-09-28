@@ -9,7 +9,7 @@ abstract class CatsRepository {
 }
 
 class SampleCatsRepository implements CatsRepository {
-  final baseUrl = "https://hwasampleapi.firebaseio.com/http.json1";
+  final baseUrl = "https://hwasampleapi.firebaseio.com/http.json";
   @override
   Future<List<Cat>> getCats() async {
     final response = await http.get(baseUrl);
